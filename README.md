@@ -81,21 +81,27 @@ Link Github: https://github.com/GabrieIbacache/Delicias_app
 1. Crear la base de datos `delicias` en tu servidor PostgreSQL.  
 2. Ejecutar en tu terminal:
 
+Cómo reproducir la base de datos (PostgreSQL)
+
+1. Crear la base de datos `delicias` en tu servidor PostgreSQL.  
+2. Ejecutar en tu terminal:
+
 ```bash
 psql -U <usuario> -h <host> -d delicias -f db/modelo.sql
 \COPY categoria FROM 'db/seeds/categorias.csv' CSV HEADER;
 \COPY producto  FROM 'db/seeds/productos.csv' CSV HEADER;
 \i db/test_crud.sql
-Esto crea la estructura, carga datos de ejemplo y ejecuta las pruebas CRUD básicas.
 
-Accesibilidad (Sprint Review)
+## Accesibilidad (Sprint Review)
+
 Contraste mínimo WCAG AA en textos sobre imágenes.
 
 Botones y áreas táctiles ≥ 44 px; foco visible.
 
 Mensajes de error comprensibles (sin códigos técnicos).
 
-Definition of Done 
+Definition of Done (resumen)
+
 Criterios de aceptación de HU cumplidos y validados.
 
 Pruebas CRUD ejecutadas con evidencias en /db.
@@ -107,7 +113,8 @@ UML actualizado en /UML y fuentes PlantUML en /UML/src.
 Documentado en README y validado con stakeholder.
 
 Integrantes
-Product Owner / Scrum Master: Gabriel Ibacache
-Development Team: Alexander (simulado)
 
+Product Owner / Scrum Master: Gabriel Ibacache
+
+Development Team: Alexander (simulado)
 
