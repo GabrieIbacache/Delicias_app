@@ -57,6 +57,7 @@ Scrum adaptado: Sprints definidos, uso de backlog priorizado.
 Herramientas: GitHub para control de versiones y documentación, Trello para gestión de tareas.
 
 Link Trello: https://trello.com/invite/b/68dac7e676ff3c95d757df99/ATTIb6d82813ef07c91f7be75ed4ea96d31956584183/delicias-app 
+
 Link Github: https://github.com/GabrieIbacache/Delicias_app
 
 ---
