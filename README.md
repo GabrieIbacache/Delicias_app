@@ -6,7 +6,7 @@ Incluye vista de administrador para gestionar pedidos.
 
 ---
 
-## 📂 Estructura del repositorio
+##  Estructura del repositorio
 
 /docs
 ERS_actualizado.pdf
@@ -69,13 +69,10 @@ productos.csv
   - GitHub para control de versiones y documentación.  
   - Trello para gestión de tareas y seguimiento de sprints.
 
-<<<<<<< Updated upstream
+
 Link Trello: https://trello.com/invite/b/68dac7e676ff3c95d757df99/ATTIb6d82813ef07c91f7be75ed4ea96d31956584183/delicias-app 
 
 Link Github: https://github.com/GabrieIbacache/Delicias_app
-=======
-- **Tablero Trello:**(https://trello.com/invite/b/68dac7e676ff3c95d757df99/ATTIb6d82813ef07c91f7be75ed4ea96d31956584183/delicias-app)
->>>>>>> Stashed changes
 
 ---
 
@@ -91,8 +88,6 @@ psql -U <usuario> -h <host> -d delicias -f db/modelo.sql
 \i db/test_crud.sql
 Esto crea la estructura, carga datos de ejemplo y ejecuta las pruebas CRUD básicas.
 
-<<<<<<< Updated upstream
-=======
 Accesibilidad (Sprint Review)
 Contraste mínimo WCAG AA en textos sobre imágenes.
 
@@ -111,14 +106,8 @@ UML actualizado en /UML y fuentes PlantUML en /UML/src.
 
 Documentado en README y validado con stakeholder.
 
->>>>>>> Stashed changes
 Integrantes
 Product Owner / Scrum Master: Gabriel Ibacache
-
 Development Team: Alexander (simulado)
 
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
