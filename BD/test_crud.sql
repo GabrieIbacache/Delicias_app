@@ -70,3 +70,34 @@ WHERE id='p0010000-0000-0000-0000-000000000001';
 -- DELETE (soft): desactivar producto
 UPDATE producto SET activo=false
 WHERE id='bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb';
+
+-- Crear cliente
+INSERT INTO cliente (id, nombre, email, telefono, direccion)
+VALUES ('c1111111-1111-1111-1111-111111111111','Juan Pérez','juan@correo.com','+56911111111','Centro 123');
+
+-- Crear pedido + items
+INSERT INTO pedido (id, id_cliente, total)
+VALUES ('p0010000-0000-0000-0000-000000000001','c1111111-1111-1111-1111-111111111111',12980);
+
+INSERT INTO pedido_item (id, id_pedido, id_producto, cantidad, precio_unitario)
+VALUES 
+('it-1','p0010000-0000-0000-0000-000000000001','aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',1,6990),
+('it-2','p0010000-0000-0000-0000-000000000001','bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',1,5990);
+
+-- Leer pedido
+SELECT id, fecha, estado, total FROM pedido WHERE id='p0010000-0000-0000-0000-000000000001';
+
+-- Actualizar estado
+UPDATE pedido SET estado='preparando' WHERE id='p0010000-0000-0000-0000-000000000001';
+
+-- Pago aprobado (idempotencia por txn_id)
+INSERT INTO pago (id, id_pedido, proveedor, txn_id, monto, estado)
+VALUES ('pay-1','p0010000-0000-0000-0000-000000000001','WebPay','TXN-123',12980,'aprobado');
+
+-- Intento duplicado (debe fallar por UNIQUE)
+-- INSERT INTO pago (id, id_pedido, proveedor, txn_id, monto, estado)
+-- VALUES ('pay-dup','p0010000-0000-0000-0000-000000000001','WebPay','TXN-123',12980,'aprobado');
+
+-- Desactivar producto (soft delete)
+UPDATE producto SET activo=false WHERE id='bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb';
+

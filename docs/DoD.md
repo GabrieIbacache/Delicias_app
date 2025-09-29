@@ -34,3 +34,9 @@ Definition of Done — Delicias MVP
 - Admin puede cambiar estado en el orden correcto.
 - Cambio reflejado de inmediato en la vista del cliente.
 - Registro visual básico de quién/cuándo cambió estado.
+
+
+- Criterios de aceptación de la HU cumplidos (medibles).
+- Evidencias CRUD en /db; UML actualizado en /UML y /UML/src.
+- Capturas Figma en /ui y link al prototipo.
+- Documentado en README; validado con stakeholder.

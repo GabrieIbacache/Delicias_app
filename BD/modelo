@@ -1,0 +1,64 @@
+-- Tipos
+DO $$ BEGIN
+  CREATE TYPE estado_pedido AS ENUM ('recibido','preparando','listo','entregado','cancelado');
+EXCEPTION WHEN duplicate_object THEN NULL; END $$;
+
+DO $$ BEGIN
+  CREATE TYPE estado_pago AS ENUM ('aprobado','fallido','pendiente');
+EXCEPTION WHEN duplicate_object THEN NULL; END $$;
+
+-- Tablas mínimas MVP
+CREATE TABLE IF NOT EXISTS categoria (
+  id UUID PRIMARY KEY,
+  nombre VARCHAR(120) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS producto (
+  id UUID PRIMARY KEY,
+  id_categoria UUID REFERENCES categoria(id),
+  nombre VARCHAR(120) NOT NULL,
+  descripcion TEXT,
+  precio NUMERIC(10,2) NOT NULL,
+  es_vegano BOOLEAN DEFAULT FALSE,
+  es_vegetariano BOOLEAN DEFAULT FALSE,
+  foto_url TEXT,
+  activo BOOLEAN DEFAULT TRUE
+);
+CREATE INDEX IF NOT EXISTS idx_producto_nombre ON producto(nombre);
+
+CREATE TABLE IF NOT EXISTS cliente (
+  id UUID PRIMARY KEY,
+  nombre VARCHAR(120),
+  email VARCHAR(160),
+  telefono VARCHAR(30),
+  direccion VARCHAR(200),
+  puntos_acumulados INT DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS pedido (
+  id UUID PRIMARY KEY,
+  id_cliente UUID REFERENCES cliente(id),
+  fecha TIMESTAMP NOT NULL DEFAULT now(),
+  estado estado_pedido NOT NULL DEFAULT 'recibido',
+  total NUMERIC(10,2) NOT NULL,
+  eta_estimada TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_pedido_cliente_fecha ON pedido(id_cliente, fecha);
+
+CREATE TABLE IF NOT EXISTS pedido_item (
+  id UUID PRIMARY KEY,
+  id_pedido UUID NOT NULL REFERENCES pedido(id) ON DELETE CASCADE,
+  id_producto UUID NOT NULL REFERENCES producto(id),
+  cantidad INT NOT NULL,
+  precio_unitario NUMERIC(10,2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS pago (
+  id UUID PRIMARY KEY,
+  id_pedido UUID UNIQUE REFERENCES pedido(id),
+  proveedor VARCHAR(30) NOT NULL,
+  txn_id VARCHAR(80) UNIQUE NOT NULL,
+  monto NUMERIC(10,2) NOT NULL,
+  estado estado_pago NOT NULL,
+  fecha TIMESTAMP NOT NULL DEFAULT now()
+);
