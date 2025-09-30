@@ -47,6 +47,7 @@ productos.csv
 - **Definition of Done:** [`/docs/DoD.md`](./docs/DoD.md)  
 - **Pruebas CRUD:** [`/db/test_crud.sql`](./db/test_crud.sql)  
 - **UML:** en `/UML` (Casos de uso, Actividades cliente/admin, Clases, Modelo de datos, Infraestructura, Despliegue)
+- **DoD (formato profesor): ./docs/DoD.xlsx
 
 ---
 
@@ -76,12 +77,7 @@ Link Github: https://github.com/GabrieIbacache/Delicias_app
 
 ---
 
-## Cómo reproducir la base de datos (PostgreSQL)
-
-1. Crear la base de datos `delicias` en tu servidor PostgreSQL.  
-2. Ejecutar en tu terminal:
-
-Cómo reproducir la base de datos (PostgreSQL)
+## 🗄️ Cómo reproducir la base de datos (PostgreSQL)
 
 1. Crear la base de datos `delicias` en tu servidor PostgreSQL.  
 2. Ejecutar en tu terminal:
