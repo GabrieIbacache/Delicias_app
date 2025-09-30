@@ -6,7 +6,7 @@ Incluye vista de administrador para gestionar pedidos.
 
 ---
 
-Estructura del repositorio
+## 📂 Estructura del repositorio
 
 /docs
 ERS_actualizado.pdf
@@ -14,9 +14,7 @@ Project_Burndown.pdf
 Product_Backlog.pdf
 MVP.md
 DoD.md
-DoD.xlsx
 test_crud.sql
-
 /UML
 casos_uso.png
 actividades_cliente.png
@@ -25,7 +23,6 @@ clases.png
 modelo_de_base_de_datos.png
 infraestructura_fisica.png
 despliegue.png
-
 /ui
 links_figma.txt
 menu.png
@@ -33,29 +30,24 @@ carrito.png
 pago.png
 estado.png
 admin_pedidos.png
-insert.png
-select.png
-update.png
-delete.png
-
 /db
 modelo.sql
 test_crud.sql
-
 /seeds
 categorias.csv
 productos.csv
 
 ---
 
-## Documentación clave -
-**ERS actualizado:** [/docs/ERS_actualizado.pdf](./docs/ERS_actualizado.pdf) -
-**Product Backlog:** [/docs/Product_Backlog.pdf](./docs/Product_Backlog.pdf) - 
-**MVP:** [/docs/MVP.md](./docs/MVP.md) - 
-**Definition of Done:** [/docs/DoD.md](./docs/DoD.md) - 
-**Pruebas CRUD:** [/db/test_crud.sql](./db/test_crud.sql) -
-**UML:** en /UML (Casos de uso, Actividades cliente/admin, Clases, Modelo de datos, Infraestructura, Despliegue) -
-**DoD (formato profesor): ./docs/DoD.xlsx -
+## Documentación clave
+
+- **ERS actualizado:** [`/docs/ERS_actualizado.pdf`](./docs/ERS_actualizado.pdf)  
+- **Product Backlog:** [`/docs/Product_Backlog.pdf`](./docs/Product_Backlog.pdf)  
+- **MVP:** [`/docs/MVP.md`](./docs/MVP.md)  
+- **Definition of Done:** [`/docs/DoD.md`](./docs/DoD.md)  
+- **Pruebas CRUD:** [`/db/test_crud.sql`](./db/test_crud.sql)  
+- **UML:** en `/UML` (Casos de uso, Actividades cliente/admin, Clases, Modelo de datos, Infraestructura, Despliegue)
+- **DoD (formato profesor): ./docs/DoD.xlsx -
 
 ---
 
