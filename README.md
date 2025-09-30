@@ -119,4 +119,5 @@ Definition of Done (resumen)
 Integrantes
 
 Product Owner / Scrum Master: Gabriel Ibacache
+
 Development Team: Alexander (simulado)
