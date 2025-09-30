@@ -15,6 +15,7 @@ Product_Backlog.pdf
 MVP.md
 DoD.md
 test_crud.sql
+
 /UML
 casos_uso.png
 actividades_cliente.png
@@ -23,6 +24,7 @@ clases.png
 modelo_de_base_de_datos.png
 infraestructura_fisica.png
 despliegue.png
+
 /ui
 links_figma.txt
 menu.png
@@ -30,6 +32,7 @@ carrito.png
 pago.png
 estado.png
 admin_pedidos.png
+
 /db
 modelo.sql
 test_crud.sql
