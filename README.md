@@ -47,7 +47,7 @@ productos.csv
 - **Definition of Done:** [`/docs/DoD.md`](./docs/DoD.md)  
 - **Pruebas CRUD:** [`/db/test_crud.sql`](./db/test_crud.sql)  
 - **UML:** en `/UML` (Casos de uso, Actividades cliente/admin, Clases, Modelo de datos, Infraestructura, Despliegue)
-- **DoD (formato profesor): ./docs/DoD.xlsx -
+- **DoD (formato evaluacion):** ./docs/DoD.xlsx 
 
 ---
 
