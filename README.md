@@ -48,13 +48,14 @@ productos.csv
 
 ---
 
-## Documentación clave - **ERS actualizado:** [/docs/ERS_actualizado.pdf](./docs/ERS_actualizado.pdf) -
+## Documentación clave -
+**ERS actualizado:** [/docs/ERS_actualizado.pdf](./docs/ERS_actualizado.pdf) -
 **Product Backlog:** [/docs/Product_Backlog.pdf](./docs/Product_Backlog.pdf) - 
 **MVP:** [/docs/MVP.md](./docs/MVP.md) - 
 **Definition of Done:** [/docs/DoD.md](./docs/DoD.md) - 
 **Pruebas CRUD:** [/db/test_crud.sql](./db/test_crud.sql) -
 **UML:** en /UML (Casos de uso, Actividades cliente/admin, Clases, Modelo de datos, Infraestructura, Despliegue) -
-**DoD (formato profesor): ./docs/DoD.xlsx
+**DoD (formato profesor): ./docs/DoD.xlsx -
 
 ---
 
