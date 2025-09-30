@@ -62,6 +62,7 @@ productos.csv
 Prototipo UI
 
 Prototipo navegable (Figma): https://build-stone-02402811.figma.site
+
 Capturas clave:
 /ui/menu.png
 /ui/carrito.png
